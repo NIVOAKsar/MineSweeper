@@ -1,7 +1,7 @@
 # Mine Sweeper
 
 A project made in Vanilla-JS,
-The 1st sprint during the bootcamp.
+The 1st sprint of the coding-bootcamp.
 
 # For Better Experience (recommended)
 * Resize the page for at least 150%.
