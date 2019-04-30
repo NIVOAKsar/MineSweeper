@@ -1,6 +1,6 @@
 # Mine Sweeper
 
-A project made in Vanilla-JS,
+A project made in JavaScript,
 The 1st sprint of the coding-bootcamp.
 
 # For Better Experience (recommended)
