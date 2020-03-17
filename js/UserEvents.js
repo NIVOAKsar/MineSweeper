@@ -8,7 +8,7 @@ function levelClicked(elBtn) {
         case 'Medium': gLevel = { TYPE: 'medium', SIZE_LINE: 6, TOTAL_MINES: 6 }; break;
         case 'Expert': gLevel = { TYPE: 'expert', SIZE_LINE: 8, TOTAL_MINES: 8 }; break;
     }
-    new Audio('sounds/flip.wav').play();
+    // new Audio('sounds/flip.wav').play();
 
     initGame();
 }
@@ -32,18 +32,18 @@ function buttonClickedLeft(elBtn) {
     slotModel.isShown = true;
     switch (slotModel.value) {
         case MINE:
-            new Audio('sounds/bomb.wav').play()
+            // new Audio('sounds/bomb.wav').play()
             slotModel.styleClass += 'blown-mine ';
             gameOver();
             break;
         case EMPTY:
-            new Audio('sounds/click.wav').play()
+            // new Audio('sounds/click.wav').play()
             gGame.unrevealed--; // reveal to the slot itself
             expand(pos);
             checkIfWin();
             break;
         default:
-            new Audio('sounds/click.wav').play()
+            // new Audio('sounds/click.wav').play()
             gGame.unrevealed--;
             checkIfWin();
             break;
@@ -82,7 +82,7 @@ function hintClicked(elHintBtn) {
     if (!gGame.isHintMode && !elHintBtn.classList.contains('disabled')) {
         gActiveHint = elHintBtn;
         toggleHintBtn();
-        new Audio('sounds/hintButton.wav').play();
+        // new Audio('sounds/hintButton.wav').play();
     }
 }
 

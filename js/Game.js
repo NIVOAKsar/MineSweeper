@@ -74,7 +74,7 @@ function initComponents(elBtn) {
     cleanFlags()
     startTime();
 
-    new Audio('sounds/start.wav').play();
+    // new Audio('sounds/start.wav').play();
 }
 
 function checkIfWin() {
@@ -102,7 +102,7 @@ function winMode() {
     colorMines();
     document.querySelector('.middle .face').innerHTML = SMILE_WINNER;
     document.querySelector('.bottom button').innerText = 'Another One?'
-    new Audio('sounds/win.wav').play();
+    // new Audio('sounds/win.wav').play();
 
     if (sessionStorage.getItem(gLevel.TYPE)) {
         if (gSec > (sessionStorage.getItem(gLevel.TYPE))) {
